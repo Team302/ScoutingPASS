@@ -64,36 +64,26 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auton Scoring",
-      "code": "asg",
-      "type": "clickable_image",
-      "filename": "2023/grid_image.png",
-      "dimensions": "9 4",
-      "clickRestriction": "onePerBox",
-      "toggleClick": "true",
-      "showFlip": "false",
-      "showUndo": "false",
-      "shape": "circle 12 black red true"
-    },
-    { "name": "Dropped Game Pieces",
-      "code": "adp",
+    { "name": "Cross the line",
+	  "code": "acl",
+	  "type": "bool"
+	},
+    { "name": "Scored in Speaker",
+      "code": "asps",
       "type": "counter"
     },
-	{ "name": "Crossed the<br>Community Line",
-      "code": "am",
-      "type": "bool"
+    { "name": "Attempted in Speaker",
+      "code": "aspa",
+      "type": "counter"
     },
-    { "name": "Docked",
-      "code": "ad",
-      "type":"radio",
-      "choices": {
-        "d": "Docked (not Engaged)<br>",
-        "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
-      },
-      "defaultValue": "x"
-    }
+    { "name": "Scored in Amp",
+      "code": "aamps",
+      "type":"counter"
+    },
+	( "name": "Attempted on Amp",
+	  "code": "aampa",
+	  "type": "counter"
+	}
   ],
   "teleop": [
     { "name": "Cycle Timer",
