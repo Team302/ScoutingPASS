@@ -100,7 +100,7 @@ var config_data = `
     },
 	{ "name": "Attempted in Speaker",
 	  "code": "tas",
-	  "type": counter"
+	  "type": "counter"
 	},
     { "name": "Pickup From",
       "code": "tpu",
