@@ -1,5 +1,6 @@
 var config_data = `
 {
+  "dataFormat": "kvs",
   "title": "Scouting PASS 2023",
   "page_title": "Charged Up",
   "checkboxAs": "10",
@@ -14,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023week0",
+      "defaultValue": "2023tnkn",
       "required": "true",
       "disabled": "true"
     },
@@ -23,7 +24,7 @@ var config_data = `
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
-        "de": "Double Elimination<br>",
+        "sf": "Semifinals<br>",
         "f": "Finals"
       },
       "defaultValue": "qm",
@@ -60,6 +61,7 @@ var config_data = `
       "type": "clickable_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
+      "allowableResponses": "2 3 4 9 10 11 14 15 16 21 22 23 26 27 28 33 34 35 38 39 46 47",
       "shape": "circle 5 black red true"
     }
   ],
@@ -71,7 +73,7 @@ var config_data = `
       "dimensions": "9 4",
       "clickRestriction": "onePerBox",
       "toggleClick": "true",
-      "showFlip": "false",
+      "showFlip": "true",
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
@@ -129,6 +131,17 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
+    },
+    { "name": "Substation Use",
+      "code": "sub",
+      "type": "radio",
+      "choices": {
+        "1": "Single<br>",
+        "2": "Double<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
     }
   ],
   "endgame": [
@@ -146,6 +159,10 @@ var config_data = `
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
+      "type": "counter"
+    },
+    { "name": "Links Scored<br>(by alliance)",
+      "code": "ls",
       "type": "counter"
     }
   ],
