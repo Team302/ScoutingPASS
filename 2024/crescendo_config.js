@@ -90,7 +90,7 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
-	{ "name": "Attempted in Amp"
+	{ "name": "Attempted in Amp",
 	  "code": "taa",
 	  "type": "counter"
 	},
