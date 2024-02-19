@@ -5,17 +5,17 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter Name",
       "code": "s",
       "type": "scouter",
       "size": 5,
-      "maxSize": 5,
+      "maxSize": 15,
       "required": "true"
     },
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2023miber",
       "required": "true"
     },
     { "name": "Match Level",
@@ -23,7 +23,7 @@ var config_data = `
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
+        "sf": "Double Eliminations<br>",
         "f": "Finals"
       },
       "defaultValue": "qm",
@@ -60,7 +60,6 @@ var config_data = `
       "type": "clickable_image",
       "filename": "2024/field_image.png",
       "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
       "shape": "circle 5 black red true"
     }
   ],
@@ -69,28 +68,40 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "Scored in Amp",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+	{ "name": "Attempted in Amp",
+	  "code": "aaa",
+	  "type": "counter"
+	},
+    { "name": "Scored in Speaker",
       "code": "ass",
       "type": "counter"
-    }
+    },
+	{ "name": "Attempted in Speaker",
+	  "code": "aas",
+	  "type": "counter"
+	}
   ],
   "teleop": [
-    { "name": "Amp Scores",
+    { "name": "Scored in Amp",
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+	{ "name": "Attempted in Amp"
+	  "code": "taa",
+	  "type": "counter"
+	},
+    { "name": "Scored in Speaker",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
-      "type": "counter"
-    },
+	{ "name": "Attempted in Speaker",
+	  "code": "tas",
+	  "type": counter"
+	},
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
@@ -121,23 +132,16 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Note in Trap",
-      "code": "nit",
-      "type": "bool"
-    }
+    { "name": "Scored in Trap",
+      "code": "sit",
+      "type": "counter"
+    },
+	{ "name": "Attempted in Trap",
+	  "code": "ait",
+	  "type": "counter"
+	}
   ],
   "postmatch": [
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -149,18 +153,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -174,16 +166,11 @@ var config_data = `
       "code": "dn",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
-    },
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 100
     }
   ]
 }`;
