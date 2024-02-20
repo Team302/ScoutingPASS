@@ -77,7 +77,7 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     },
-	( "name": "Attempted on Speaker",
+	{ "name": "Attempted on Speaker",
 	  "code": "aas",
 	  "type": "counter"
 	}
