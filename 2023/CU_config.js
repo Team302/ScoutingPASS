@@ -95,6 +95,10 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
+	{ "name": "Attempted in Speaker",
+	  "code": "tas",
+	  "type": "counter"
+	},
 	{ "name": "Who defended them?<br>(if not defended, ignore)",
 	  "code": "wdt",
 	  "type": "text"
@@ -133,7 +137,7 @@ var config_data = `
       "code": "sit",
       "type": "counter"
     },
-	{ "name": "Attempted in Speaker",
+	{ "name": "Attempted in Trap",
       "code": "ait",
       "type": "counter"
     }
