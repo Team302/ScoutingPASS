@@ -57,40 +57,28 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Game piece pick up location",
+    { "name": "ability to score...",
       "code": "pul",
       "type":"radio",
       "choices": {
-        "d": "Double Substation only<br>",
-        "s": "Single Substation<br>",
-		"f": "Floor pick-up only<br>",
-        "b": "All locations<br>",
-        "x": "Can not manipulate game pieces"
+        "sps": "Specimen and samples <br>",
+        "s": "samples<br>",
+
       },
-      "defaultValue": "x"
+      "defaultValue": "sps"
     },
 	{ "name": "Floor pick up",
       "code": "fpu",
       "type":"radio",
       "choices": {
-        "u": "Cubes only<br>",
-        "o": "Cones only<br>",
+        "n": "No floor pickup<br>",
+        "f": "Floor pickupy<br>",
         "b": "Both<br>",
         "x": "Can not manipulate game pieces"
      },
       "defaultValue": "x"
     },
-    { "name": "Cone pick up orientation<br>from floor",
-      "code": "coo",
-      "type": "radio",
-      "choices": {
-        "u": "Upright only<br>",
-        "s": "On side only<br>",
-        "a": "All orientation<br>",
-        "x": "Cannot pick up<br>cones off the floor"
-      },
-      "defaultValue":"x"
-    },
+
 	{ "name": "Auton Start Positions<br>(include all options)<br>(if can start from anywhere, leave blank)",
       "code": "asp",
       "type": "clickable_image",
@@ -121,7 +109,7 @@ var config_data = `
 	  },
 	  "defaultValue": "x"
     },
-	{ "name": "Teleop scoring ability<br>(bottom, middle, top, or all rows)",
+	{ "name": "Teleop scoring ability<br>(Low, High, both or no baskets)",
       "code": "ts",
       "type": "text",
       "size": 20,
