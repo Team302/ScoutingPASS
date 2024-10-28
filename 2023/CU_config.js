@@ -37,10 +37,10 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-		"r1": "Red backdrop",
-        "b1": "Blue backdrop<br>",
-        "r2": "Red landing zone",
-        "b2": "Blue landing zone<br>",
+		"r1": "Red area",
+        "b1": "Blue area<br>",
+        "r2": "Red away",
+        "b2": "Blue away<br>",
         "r3": " ",
 		"b3": " "
 	  },
@@ -52,14 +52,14 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-	{ "name": "Are they using<br>a pixel or team prop?",
+	{ "name": "Are they using<br>a sample or team prop?",
 	  "code": "spi",
 	  "type": "radio",
 	  "choices": {
-		  "px": "Pixel",
+		  "sm": "Sample",
 		  "tp": "Team Prop"
 	  },
-	  "defaultValue": "px"
+	  "defaultValue": "sm"
 	},
     { "name": "Is their robot<br>on the field?",
       "code": "as",
@@ -71,51 +71,58 @@ var config_data = `
 	  "code": "prk",
 	  "type": "bool"
 	},
-	{ "name": "Purple pixel on<br>randomized line",
-	  "code": "plr",
+	{ "name": "samples in<br>net zone",
+	  "code": "snz",
 	  "type": "bool"
 	},
-	{ "name": "Yellow pixel on<br>correct Backdrop position",
-	  "code": "ybr",
+	{ "name": "sample in<br>low basket",
+	  "code": "slb",
 	  "type": "bool"
 	},
-	{ "name": "All pixels they placed<br>in the Backdrop",
-	  "code": "abd",
+	{ "name": "sample in<br>high basket",
+	  "code": "shb",
 	  "type": "counter"
 	},
-	{ "name": "All pixels they placed<br>in the Backstage",
-	  "code": "abs",
+ 	{ "name": "specimen in<br>high basket",
+	  "code": "sph",
+	  "type": "counter"
+	},
+	{ "name": "specimen in <br>in low basket",
+	  "code": "spl",
 	  "type": "counter"
 	}
   ],
   "teleop": [
-    { "name": "Pixel's placed on<br>Backdrop in teleop",
-	  "code": "tbd",
+   { "name": "samples in<br>net zone",
+	  "code": "tsnz",
+	  "type": "bool"
+	},
+	{ "name": "sample in<br>low basket",
+	  "code": "tslb",
+	  "type": "bool"
+	},
+	{ "name": "sample in<br>high basket",
+	  "code": "tshb",
 	  "type": "counter"
-    },
-    { "name": "Pixels placed in<br>Backstage in teleop",
-      "code": "tbs",
-      "type": "counter"
-    },
-    { "name": "Lines crossed on<br>the backdrop",
-      "code": "bdl",
-      "type": "radio",
-	  "choices": {
-		  "l0": "No lines<br>",
-		  "l1": "First line<br>",
-		  "l2": "Second line<br>",
-		  "l3": "Third line"
-	  },
-	  "defaultValue": 0
-    }
+	},
+ 	{ "name": "specimen in<br>high basket",
+	  "code": "tsph",
+	  "type": "counter"
+	},
+	{ "name": "specimen in <br>in low basket",
+	  "code": "tspl",
+   //Teleop specimen low
+	  "type": "counter"
+	}
   ],
   "endgame": [
     { "name": "Final Position",
       "code": "fp",
       "type":"radio",
       "choices": {
-        "p": "Parked in the Backstage<br>",
-        "s": "Suspended from the rigging<br>",
+        "l": "Touching low rung<br>",
+        "h": "Touching high rung<br>",
+	"p": "Parked<br>",
 		"a": "Attempted suspension<br>",
 		"x": "No special position"
       },
@@ -142,7 +149,7 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Pixels (>4)",
+    { "name": "Dropped pieces (>4)",
       "code": "dp",
       "type": "bool"
     },
