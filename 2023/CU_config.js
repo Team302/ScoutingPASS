@@ -1,7 +1,7 @@
 var config_data = `
 {
   "title": "Scouting PASS 2023-24 FTC edition",
-  "page_title": "Centerstage",
+  "page_title": "Centerstagey",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Name",
