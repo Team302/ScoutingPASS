@@ -41,8 +41,7 @@ var config_data = `
         "b1": "Blue backdrop<br>",
         "r2": "Red landing zone",
         "b2": "Blue landing zone<br>",
-        "r3": " ",
-		"b3": " "
+        
 	  },
 	  "required": "true"
     },
@@ -52,11 +51,11 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-	{ "name": "Are they using<br>a pixel or team prop?",
+	{ "name": "Are they using<br>a sample or team prop?",
 	  "code": "spi",
 	  "type": "radio",
 	  "choices": {
-		  "px": "Pixel",
+		  "sm": "sample",
 		  "tp": "Team Prop"
 	  },
 	  "defaultValue": "px"
