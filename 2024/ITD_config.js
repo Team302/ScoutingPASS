@@ -55,7 +55,7 @@ var config_data = `
 	  "code": "spi",
 	  "type": "radio",
 	  "choices": {
-		  "sm": "sample",
+		  "px": "sample",
 		  "tp": "Team Prop"
 	  },
 	  "defaultValue": "px"
