@@ -88,14 +88,6 @@ var config_data = `
 	  },
 	  "defaultValue": "x"
     },
-    	{ "name": "Tele-op prefrence",
-      "code": "top",
-      "type":"radio",
-      "choices": 
-        "zzz": "specimen<br>",
-        "zz": "above avarage<br>",
-        "z": "either<br>",
-       },
 	{ "name": "Teleop scoring ability<br>(bottom, middle, top, or all rows)",
       "code": "ts",
       "type": "text",
@@ -109,6 +101,12 @@ var config_data = `
     { "name": "# of specimen on teleop",
       "code": "tc",
       "type": "counter"
+    },
+    	{ "name": "Teleop Strategy",
+      "code": "co",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
 	{ "name": "Comments",
       "code": "co",
