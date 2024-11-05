@@ -117,7 +117,7 @@ var config_data = `
       "type": "text",
       "size": 20,
       "maxSize": 250
-    }
+    },
   ],
   "auton": [
   ],
