@@ -92,9 +92,9 @@ var config_data = `
       "code": "top",
       "type":"radio",
       "choices": {
-        "spe": "specimen<br>",
-        "sam": "above avarage<br>",
-        "e": "either<br>",
+        "zzz": "specimen<br>",
+        "zz": "above avarage<br>",
+        "z": "either<br>",
      },
       "defaultValue": "e"
        },
@@ -117,7 +117,7 @@ var config_data = `
       "type": "text",
       "size": 20,
       "maxSize": 250
-    },
+    }
   ],
   "auton": [
   ],
