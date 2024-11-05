@@ -35,17 +35,6 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio (speed)",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1 (8.14:1 or 12-13 ft/sec)<br>",
-        "2": "L2 (6.75:1 or 14-16 ft/sec)<br>",
-        "3": "L3 (6.12:1 or 16-18 ft/sec)<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
@@ -57,25 +46,25 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Game piece pick up location",
+    { "name": "Game pieces manipulated",
       "code": "pul",
       "type":"radio",
       "choices": {
-        "d": "Double Substation only<br>",
-        "s": "Single Substation<br>",
-		"f": "Floor pick-up only<br>",
-        "b": "All locations<br>",
+        "sp": "Specimen only <br>",
+        "sa": "Samples only br>",
+        "b": "All game pieces<br>",
         "x": "Can not manipulate game pieces"
       },
-      "defaultValue": "x"
+      "defaultValue": "sa"
     },
-	{ "name": "Floor pick up",
+	{ "name": "Floor pick up efficency",
       "code": "fpu",
       "type":"radio",
       "choices": {
-        "u": "Cubes only<br>",
-        "o": "Cones only<br>",
-        "b": "Both<br>",
+        "e": "excellent<br>",
+        "aa": "above avarage<br>",
+        "a": "avarage<br>",
+	"ba": "Below avarage<br>",
         "x": "Can not manipulate game pieces"
      },
       "defaultValue": "x"
