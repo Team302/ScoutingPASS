@@ -68,18 +68,6 @@ var config_data = `
         "x": "Can not manipulate game pieces"
      },
       "defaultValue": "x"
-    },
-    { "name": "Cone pick up orientation<br>from floor",
-      "code": "coo",
-      "type": "radio",
-      "choices": {
-        "u": "Upright only<br>",
-        "s": "On side only<br>",
-        "a": "All orientation<br>",
-        "x": "Cannot pick up<br>cones off the floor"
-      },
-      "defaultValue":"x"
-    },
 	{ "name": "Auton Start Positions<br>(include all options)<br>(if can start from anywhere, leave blank)",
       "code": "asp",
       "type": "clickable_image",
