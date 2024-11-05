@@ -91,12 +91,10 @@ var config_data = `
     	{ "name": "Tele-op prefrence",
       "code": "top",
       "type":"radio",
-      "choices": {
+      "choices": 
         "zzz": "specimen<br>",
         "zz": "above avarage<br>",
         "z": "either<br>",
-     },
-      "defaultValue": "e"
        },
 	{ "name": "Teleop scoring ability<br>(bottom, middle, top, or all rows)",
       "code": "ts",
