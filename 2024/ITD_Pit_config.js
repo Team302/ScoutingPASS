@@ -68,22 +68,12 @@ var config_data = `
         "x": "Can not manipulate game pieces"
      },
       "defaultValue": "x"
+       },
 	{ "name": "Auton Start Positions<br>(include all options)<br>(if can start from anywhere, leave blank)",
       "code": "asp",
       "type": "clickable_image",
-      "filename": "2023/field_image.png",
+      "filename": "2024/field_image.png",
       "shape": "circle 5 black red true"
-    },
-	{ "name": "Auton Scoring<br>(highest scoring option)",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2023/grid_image.png",
-      "dimensions": "9 4",
-      "clickRestriction": "onePerBox",
-      "toggleClick": "true",
-      "showFlip": "false",
-      "showUndo": "false",
-      "shape": "circle 12 black red true"
     },
 	{ "name": "Confidence engaging in auton",
       "code": "aec",
@@ -98,13 +88,27 @@ var config_data = `
 	  },
 	  "defaultValue": "x"
     },
+    	{ "name": "Tele-op prefrence",
+      "code": "top",
+      "type":"radio",
+      "choices": {
+        "spe": "specimen<br>",
+        "sam": "above avarage<br>",
+        "e": "either<br>",
+     },
+      "defaultValue": "e"
+       },
 	{ "name": "Teleop scoring ability<br>(bottom, middle, top, or all rows)",
       "code": "ts",
       "type": "text",
       "size": 20,
       "maxSize": 250
 	},
-	{ "name": "# of cycles on teleop",
+	{ "name": "# of samples on teleop",
+      "code": "tc",
+      "type": "counter"
+    },
+    { "name": "# of specimen on teleop",
       "code": "tc",
       "type": "counter"
     },
