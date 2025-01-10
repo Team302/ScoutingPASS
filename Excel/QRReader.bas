@@ -1,3 +1,5 @@
+// UPDATED 2025
+
 Attribute VB_Name = "QRReader"
 
 Sub Save1QR()
