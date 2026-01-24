@@ -110,69 +110,54 @@ var config_data = `
         "nz": "In Neutral Zone<br>",
         "ca": "Climb Attempt<br>",
         "az": "In Alliance Zone"
-      },
+      }
   ],
   //---------------------------------------------------------------------------------------
   "teleop": [
-    { "name": "Coral Scored in L1",
-      "code": "ton",
+   { "name": "Teleop Pickup Location",
+      "code": "tpl",
+      "type": "tpick",
+      "choices": {
+        "th": "HP Hopper fed<br>",
+        "tg": "Ground Intake<br>",
+        "tn": "No Intake"
+    },
+	   { "name": "Teleop Shooting Location",
+      "code": "tsl",
+      "type": "tshoot",
+      "choices": {
+        "th": "Touching Hub<br>",
+        "cb": "Close to Hub<br>",
+		"fh": "Far from Hub<br>",
+		"tn": "Nowhere<br>",
+        "te": "Everywhere"
+    },
+	   { "name": "Can Shoot while moving",
+      "code": "swm",
+      "type": "swmv",
+      "choices": {
+        "sy": "Yes<br>",
+        "sn": "No"
+    },
+		   { "name": "How do they get to the netral zone",
+      "code": "nz",
+      "type": "hgttnz",
+      "choices": {
+        "tr": "Ramp<br>",
+        "tt": "Tranch<br>",
+		"tb": "Both<br>",
+		"tn": "None"
+    },
+	       { "name": "Aprox Fuel Launched",
+      "code": "tfl",
       "type": "counter"
     },
-    { "name": "Coral Scored in L2",
-      "code": "ttw",
+	       { "name": "Aprox Fuel Fed",
+      "code": "tff",
       "type": "counter"
-    },
-	{ "name": "Coral Scored in L3",
-	  "code": "tth",
-	  "type": "counter"
-	},
-	 { "name": "Coral Scored in L4",
-	  "code": "tfo",
-	  "type": "counter"
-	},
-  { "name": "Coral Missed",
-	  "code": "tcm",
-	  "type": "counter"
-	},
-   { "name": "Algae Scored in Processor",
-	  "code": "tap",
-	  "type": "counter"
-	},
- { "name": "Algae Scored in Net",
-	  "code": "tan",
-	  "type": "counter"
-	}, 
- { "name": "Algae Missed ",
-	  "code": "tam",
-	  "type": "counter"
-	},
-	{ "name": "Were they defended<br>",
-	  "code": "wdt",
-	  "type": "text"
-	},
-    { "name": "Coral Pickup:",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "HP Station <br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    },
-      { "name": "Algae Pickup:",
-      "code": "apu",
-      "type": "radio",
-      "choices": {
-        "s": "Reef (Includes Removing It) <br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
+  //----------------------------------------------------------------------------
   "endgame":[
    { "name": "Final Status",
       "code": "fs",
