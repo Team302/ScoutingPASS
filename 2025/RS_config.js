@@ -123,7 +123,7 @@ var config_data = `
 	  "code": "tap",
 	  "type": "counter"
 	},
- { "name": "Algae Scored in Net",
+ { "name": "Algae Scored in dA Net",
 	  "code": "tan",
 	  "type": "counter"
 	}, 
