@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Name",
+       { "name": "Scouter Name",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025dal",
+      "defaultValue": "2026MICHE",
       "required": "true",
       "disabled": "false"
     },
