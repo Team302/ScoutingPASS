@@ -154,7 +154,23 @@ var config_data = `
 	       { "name": "Aprox Fuel Fed",
       "code": "tff",
       "type": "counter"
-    }
+    },
+	      { "name": "Teleop Launch Completion Percentage",
+      "code": "ac",
+      "type": "Aperc",
+      "choices": {
+        "ze": "0% Completion<br>",
+        "te": "~10% Completion<br>",
+        "tw": "~20% Completion<br>",
+        "th": "~30% Completion<br>",
+        "fo": "~40% Completion<br>",
+        "fi": "~50% Completion<br>",
+        "si": "~60% Completion<br>",
+        "se": "~70% Completion<br>",
+        "eg": "~80% Completion<br>",
+        "ni": "More then 90% Completion<br>",
+        "hu": "100% Completion"
+      }
   ],
   "endgame":[
    { "name": "Final Status",
