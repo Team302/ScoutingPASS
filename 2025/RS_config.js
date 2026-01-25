@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name5",
+       { "name": "Scouter Name6",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -69,10 +69,10 @@ var config_data = `
       "code": "apl",
       "type": "apick",
       "choices": {
-        "ah": "HP Hopper fed<br>",
-        "ag": "Ground Intake<br>",
-        "an": "No Intake"
-    },
+        "a: "HP Hopper fed<br>",
+        "a": "Ground Intake<br>",
+        "a": "No Intake"
+   		 },
 	 "defaultValue": "ag"
 	 },
         { "name": "Aprox Auton Fuel Launched",
@@ -83,17 +83,17 @@ var config_data = `
       "code": "ac",
       "type": "Aperc",
       "choices": {
-        "ze": "0% Completion<br>",
-        "te": "~10% Completion<br>",
-        "tw": "~20% Completion<br>",
-        "th": "~30% Completion<br>",
-        "fo": "~40% Completion<br>",
-        "fi": "~50% Completion<br>",
-        "si": "~60% Completion<br>",
-        "se": "~70% Completion<br>",
-        "eg": "~80% Completion<br>",
-        "ni": "More then 90% Completion<br>",
-        "hu": "100% Completion"
+        "z": "0% Completion<br>",
+        "e": "~10% Completion<br>",
+        "w": "~20% Completion<br>",
+        "h": "~30% Completion<br>",
+        "o": "~40% Completion<br>",
+        "i": "~50% Completion<br>",
+        "i": "~60% Completion<br>",
+        "e": "~70% Completion<br>",
+        "g": "~80% Completion<br>",
+        "i": "More then 90% Completion<br>",
+        "u": "100% Completion"
       },
 	   "defaultValue": "se"
 	   },
@@ -102,11 +102,11 @@ var config_data = `
       "code": "ac",
       "type": "Aclimb",
       "choices": {
-        "af": "Failed Climb<br>",
-        "ao": "L1 Climb<br>",
-        "at": "L2 Climb<br>",
-        "ax": "L3 Climb<br>",
-        "am": "Didnt Attempt"
+        "f": "Failed Climb<br>",
+        "o": "L1 Climb<br>",
+        "t": "L2 Climb<br>",
+        "x": "L3 Climb<br>",
+        "m": "Didnt Attempt"
       },
 	   "defaultValue": "am"
 	   }
