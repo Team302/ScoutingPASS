@@ -90,7 +90,7 @@ var config_data = `
         "si": "~60% Completion<br>",
         "se": "~70% Completion<br>",
         "eg": "~80% Completion<br>",
-        "ni": "More then 90% Completion<br>"
+        "ni": "More then 90% Completion<br>",
         "hu": "100% Completion"
       },
     { "name": "Auton Climb",
@@ -112,7 +112,6 @@ var config_data = `
         "az": "In Alliance Zone"
       }
   ],
-  //---------------------------------------------------------------------------------------
   "teleop": [
    { "name": "Teleop Pickup Location",
       "code": "tpl",
@@ -157,7 +156,6 @@ var config_data = `
       "type": "counter"
     }
   ],
-  //----------------------------------------------------------------------------
   "endgame":[
    { "name": "Final Status",
       "code": "fs",
