@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name2",
+       { "name": "Scouter Name3",
       "code": "s",
       "type": "scouter",
       "size": 5,
