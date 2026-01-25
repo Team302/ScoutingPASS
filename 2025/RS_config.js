@@ -72,12 +72,13 @@ var config_data = `
         "ah": "HP Hopper fed<br>",
         "ag": "Ground Intake<br>",
         "an": "No Intake"
+	   },
     },
-        { "name": "Aprox Auton Fuel Launched",
+    { "name": "Aprox Auton Fuel Launched",
       "code": "afl",
       "type": "counter"
     },
-      { "name": "Auton Launch Completion Percentage",
+    { "name": "Auton Launch Completion Percentage",
       "code": "ac",
       "type": "Aperc",
       "choices": {
