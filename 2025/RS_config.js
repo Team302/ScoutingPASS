@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title": "Scouting PASS 2026",
+  "title": "Scouting PASS 2025",
   "page_title": "Rebuilt",
   "checkboxAs": "10",
   "prematch": [
@@ -112,7 +112,6 @@ var config_data = `
         "az": "In Alliance Zone"
       }
   ],
-  //---------------------------------------------------------------------------------------
   "teleop": [
    { "name": "Teleop Pickup Location",
       "code": "tpl",
@@ -157,7 +156,6 @@ var config_data = `
       "type": "counter"
     }
   ],
-  //----------------------------------------------------------------------------
   "endgame":[
    { "name": "Final Status",
       "code": "fs",
