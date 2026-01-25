@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name7",
+       { "name": "Scouter Name8",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -78,38 +78,7 @@ var config_data = `
         { "name": "Aprox Auton Fuel Launched",
       "code": "afl",
       "type": "counter"
-    },
-      { "name": "Auton Launch Completion Percentage",
-      "code": "ac",
-      "type": "Aperc",
-      "choices": {
-        "z": "0% Completion<br>",
-        "e": "~10% Completion<br>",
-        "w": "~20% Completion<br>",
-        "h": "~30% Completion<br>",
-        "o": "~40% Completion<br>",
-        "i": "~50% Completion<br>",
-        "i": "~60% Completion<br>",
-        "e": "~70% Completion<br>",
-        "g": "~80% Completion<br>",
-        "i": "More then 90% Completion<br>",
-        "u": "100% Completion"
-      },
-	   "defaultValue": "se"
-	   },
-	   
-    { "name": "Auton Climb",
-      "code": "ac",
-      "type": "Aclimb",
-      "choices": {
-        "f": "Failed Climb<br>",
-        "o": "L1 Climb<br>",
-        "t": "L2 Climb<br>",
-        "x": "L3 Climb<br>",
-        "m": "Didnt Attempt"
-      },
-	   "defaultValue": "am"
-	   }
+    }
   ],
   "teleop": [
     { "name": "Coral Scored in L1",
