@@ -73,6 +73,8 @@ var config_data = `
         "ag": "Ground Intake<br>",
         "an": "No Intake"
     },
+	 "defaultValue": "ag"
+	 },
         { "name": "Aprox Auton Fuel Launched",
       "code": "afl",
       "type": "counter"
