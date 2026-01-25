@@ -65,38 +65,52 @@ var config_data = `
 	  "code": "al",
 	  "type": "bool"
 	},
-    { "name": "Coral Scored in L1",
-      "code": "aon",
+    { "name": "Auton Pickup Location",
+      "code": "apl",
+      "type": "apick",
+      "choices": {
+        "ah": "HP Hopper fed<br>",
+        "ag": "Ground Intake<br>",
+        "an": "No Intake"
+    },
+        { "name": "Aprox Auton Fuel Launched",
+      "code": "afl",
       "type": "counter"
     },
-    { "name": "Coral Scored in L2",
-      "code": "atw",
-      "type": "counter"
-    },
-	{ "name": "Coral Scored in L3",
-	  "code": "ath",
-	  "type": "counter"
-	},
-	 { "name": "Coral Scored in L4",
-	  "code": "afo",
-	  "type": "counter"
-	},
-  { "name": "Coral Missed",
-	  "code": "acm",
-	  "type": "counter"
-	},
-   { "name": "Algae Scored in Processor",
-	  "code": "aap",
-	  "type": "counter"
-	},
- { "name": "Algae Scored in Net",
-	  "code": "aan",
-	  "type": "counter"
-	}, 
- { "name": "Algae Missed ",
-	  "code": "aam",
-	  "type": "counter"
-	}
+      { "name": "Auton Launch Completion Percentage",
+      "code": "ac",
+      "type": "Aperc",
+      "choices": {
+        "ze": "0% Completion<br>",
+        "te": "~10% Completion<br>",
+        "tw": "~20% Completion<br>",
+        "th": "~30% Completion<br>",
+        "fo": "~40% Completion<br>",
+        "fi": "~50% Completion<br>",
+        "si": "~60% Completion<br>",
+        "se": "~70% Completion<br>",
+        "eg": "~80% Completion<br>",
+        "ni": "More then 90% Completion<br>",
+        "hu": "100% Completion"
+      },
+    { "name": "Auton Climb",
+      "code": "ac",
+      "type": "Aclimb",
+      "choices": {
+        "af": "Failed Climb<br>",
+        "ao": "L1 Climb<br>",
+        "at": "L2 Climb<br>",
+        "ax": "L3 Climb<br>",
+        "am": "Didnt Attempt"
+      },
+          { "name": "Auton End Position",
+      "code": "aep",
+      "type": "aendpos",
+      "choices": {
+        "nz": "In Neutral Zone<br>",
+        "ca": "Climb Attempt<br>",
+        "az": "In Alliance Zone"
+      }
   ],
   "teleop": [
     { "name": "Coral Scored in L1",
