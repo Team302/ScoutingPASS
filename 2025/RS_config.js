@@ -207,7 +207,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "com",
       "type": "text",
       "size": 15,
       "maxSize": 10000
