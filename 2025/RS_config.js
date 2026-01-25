@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name4",
+       { "name": "Scouter Name5",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -96,6 +96,19 @@ var config_data = `
         "hu": "100% Completion"
       },
 	   "defaultValue": "se"
+	   },
+	   
+    { "name": "Auton Climb",
+      "code": "ac",
+      "type": "Aclimb",
+      "choices": {
+        "af": "Failed Climb<br>",
+        "ao": "L1 Climb<br>",
+        "at": "L2 Climb<br>",
+        "ax": "L3 Climb<br>",
+        "am": "Didnt Attempt"
+      },
+	   "defaultValue": "am"
 	   }
   ],
   "teleop": [
