@@ -1,10 +1,10 @@
 var config_data = `
 {
-  "title": "Scouting PASS 2025",
-  "page_title": "Reefscape",
+  "title": "Scouting PASS 2026",
+  "page_title": "Rebuilt",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name8",
+    { "name": "Scouter Name",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -64,92 +64,123 @@ var config_data = `
     { "name": "Leave Starting Zone",
 	  "code": "al",
 	  "type": "bool"
-	},	
+	},
     { "name": "Auton Pickup Location",
       "code": "apl",
       "type": "apick",
       "choices": {
-        "a: "HP Hopper fed<br>",
-        "a": "Ground Intake<br>",
-        "a": "No Intake"
-   		 },
-	 "defaultValue": "ag"
-	 },
+        "ah": "HP Hopper fed<br>",
+        "ag": "Ground Intake<br>",
+        "an": "No Intake"
+    },
         { "name": "Aprox Auton Fuel Launched",
       "code": "afl",
       "type": "counter"
     },
+      { "name": "Auton Launch Completion Percentage",
+      "code": "ac",
+      "type": "Aperc",
+      "choices": {
+        "ze": "0% Completion<br>",
+        "te": "~10% Completion<br>",
+        "tw": "~20% Completion<br>",
+        "th": "~30% Completion<br>",
+        "fo": "~40% Completion<br>",
+        "fi": "~50% Completion<br>",
+        "si": "~60% Completion<br>",
+        "se": "~70% Completion<br>",
+        "eg": "~80% Completion<br>",
+        "ni": "More then 90% Completion<br>",
+        "hu": "100% Completion"
+      },
+    { "name": "Auton Climb",
+      "code": "ac",
+      "type": "Aclimb",
+      "choices": {
+        "af": "Failed Climb<br>",
+        "ao": "L1 Climb<br>",
+        "at": "L2 Climb<br>",
+        "ax": "L3 Climb<br>",
+        "am": "Didnt Attempt"
+      },
+          { "name": "Auton End Position",
+      "code": "aep",
+      "type": "aendpos",
+      "choices": {
+        "nz": "In Neutral Zone<br>",
+        "ca": "Climb Attempt<br>",
+        "az": "In Alliance Zone"
+      }
   ],
   "teleop": [
-    { "name": "Coral Scored in L1",
-      "code": "ton",
+   { "name": "Teleop Pickup Location",
+      "code": "tpl",
+      "type": "tpick",
+      "choices": {
+        "th": "HP Hopper fed<br>",
+        "tg": "Ground Intake<br>",
+        "tn": "No Intake"
+    },
+	   { "name": "Teleop Shooting Location",
+      "code": "tsl",
+      "type": "tshoot",
+      "choices": {
+        "th": "Touching Hub<br>",
+        "cb": "Close to Hub<br>",
+		"fh": "Far from Hub<br>",
+		"tn": "Nowhere<br>",
+        "te": "Everywhere"
+    },
+	   { "name": "Can Shoot while moving",
+      "code": "swm",
+      "type": "swmv",
+      "choices": {
+        "sy": "Yes<br>",
+        "sn": "No"
+    },
+		   { "name": "How do they get to the netral zone",
+      "code": "nz",
+      "type": "hgttnz",
+      "choices": {
+        "tr": "Ramp<br>",
+        "tt": "Tranch<br>",
+		"tb": "Both<br>",
+		"tn": "None"
+    },
+	       { "name": "Aprox Fuel Launched",
+      "code": "tfl",
       "type": "counter"
     },
-    { "name": "Coral Scored in L2",
-      "code": "ttw",
+	       { "name": "Aprox Fuel Fed",
+      "code": "tff",
       "type": "counter"
     },
-	{ "name": "Coral Scored in L3",
-	  "code": "tth",
-	  "type": "counter"
-	},
-	 { "name": "Coral Scored in L4",
-	  "code": "tfo",
-	  "type": "counter"
-	},
-  { "name": "Coral Missed",
-	  "code": "tcm",
-	  "type": "counter"
-	},
-   { "name": "Algae Scored in Processor",
-	  "code": "tap",
-	  "type": "counter"
-	},
- { "name": "Algae Scored in dA Net",
-	  "code": "tan",
-	  "type": "counter"
-	}, 
- { "name": "Algae Missed ",
-	  "code": "tam",
-	  "type": "counter"
-	},
-	{ "name": "Were they defended<br>",
-	  "code": "wdt",
-	  "type": "text"
-	},
-    { "name": "Coral Pickup:",
-      "code": "tpu",
-      "type": "radio",
+	      { "name": "Teleop Launch Completion Percentage",
+      "code": "ac",
+      "type": "Aperc",
       "choices": {
-        "s": "HP Station <br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    },
-      { "name": "Algae Pickup:",
-      "code": "apu",
-      "type": "radio",
-      "choices": {
-        "s": "Reef (Includes Removing It) <br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    }
+        "ze": "0% Completion<br>",
+        "te": "~10% Completion<br>",
+        "tw": "~20% Completion<br>",
+        "th": "~30% Completion<br>",
+        "fo": "~40% Completion<br>",
+        "fi": "~50% Completion<br>",
+        "si": "~60% Completion<br>",
+        "se": "~70% Completion<br>",
+        "eg": "~80% Completion<br>",
+        "ni": "More then 90% Completion<br>",
+        "hu": "100% Completion"
+      }
   ],
   "endgame":[
    { "name": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-	"j": "Shallow Climb<br>",
-	"g": "Deep Climb<br>",
-      	"o": "Failed Deep Climb<br>",
-	"h": "Failed Shallow Climb<br>",
+        "p": "Failbed Climb<br>",
+		"j": "L1 Climb<br>",
+		"g": "L2 Climb<br>",
+      	"o": "L3 Climb<br>",
         "x": "Not attempted<br>"
       },
       "defaultValue": "x"
@@ -158,9 +189,9 @@ var config_data = `
       "code": "tc",
       "type":"radio",
       "choices": {
-		    "o": "First Try ~10 Sec<br>",
-		    "h": "Solid Climb ~15 Sec<br>",
-      	    "l": "Struggled ~20 Sec<br>",
+		    "o": "First Try ~5 Sec<br>",
+		    "h": "Solid Climb ~10 Sec<br>",
+      	    "l": "Struggled ~15 Sec<br>",
         "x": "Didnt Climb<br>"
       },
       "defaultValue": "x"
