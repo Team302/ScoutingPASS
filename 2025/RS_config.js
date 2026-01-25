@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Rebuilt",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Name",
+    { "name": "Scouter Name1",
       "code": "s",
       "type": "scouter",
       "size": 5,
