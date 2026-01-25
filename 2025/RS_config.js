@@ -93,6 +93,8 @@ var config_data = `
         "ni": "More then 90% Completion<br>",
         "hu": "100% Completion"
       },
+	   "defaultValue": "se"
+	   },
     { "name": "Auton Climb",
       "code": "ac",
       "type": "Aclimb",
@@ -103,6 +105,8 @@ var config_data = `
         "ax": "L3 Climb<br>",
         "am": "Didnt Attempt"
       },
+	   "defaultValue": "am"
+	   },
           { "name": "Auton End Position",
       "code": "aep",
       "type": "aendpos",
