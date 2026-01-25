@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
-       { "name": "Scouter Name1",
+       { "name": "Scouter Name2",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -64,7 +64,17 @@ var config_data = `
     { "name": "Leave Starting Zone",
 	  "code": "al",
 	  "type": "bool"
-	}
+	},	
+    { "name": "Auton Pickup Location",
+      "code": "apl",
+      "type": "apick",
+      "choices": {
+        "ah": "HP Hopper fed<br>",
+        "ag": "Ground Intake<br>",
+        "an": "No Intake"
+    },
+	 "defaultValue": "ag"
+	 }
   ],
   "teleop": [
     { "name": "Coral Scored in L1",
