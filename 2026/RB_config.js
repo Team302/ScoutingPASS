@@ -72,12 +72,13 @@ var config_data = `
         "ah": "HP Hopper fed<br>",
         "ag": "Ground Intake<br>",
         "an": "No Intake"
+	   },
     },
-        { "name": "Aprox Auton Fuel Launched",
+    { "name": "Aprox Auton Fuel Launched",
       "code": "afl",
       "type": "counter"
     },
-      { "name": "Auton Launch Completion Percentage",
+    { "name": "Auton Launch Completion Percentage",
       "code": "ac",
       "type": "Aperc",
       "choices": {
@@ -93,6 +94,7 @@ var config_data = `
         "ni": "More then 90% Completion<br>",
         "hu": "100% Completion"
       },
+	},
     { "name": "Auton Climb",
       "code": "ac",
       "type": "Aclimb",
@@ -103,14 +105,16 @@ var config_data = `
         "ax": "L3 Climb<br>",
         "am": "Didnt Attempt"
       },
-          { "name": "Auton End Position",
+	},
+    { "name": "Auton End Position",
       "code": "aep",
       "type": "aendpos",
       "choices": {
         "nz": "In Neutral Zone<br>",
         "ca": "Climb Attempt<br>",
         "az": "In Alliance Zone"
-      }
+      },
+	}
   ],
   "teleop": [
    { "name": "Teleop Pickup Location",
@@ -120,8 +124,9 @@ var config_data = `
         "th": "HP Hopper fed<br>",
         "tg": "Ground Intake<br>",
         "tn": "No Intake"
+		},
     },
-	   { "name": "Teleop Shooting Location",
+	{ "name": "Teleop Shooting Location",
       "code": "tsl",
       "type": "tshoot",
       "choices": {
@@ -130,15 +135,17 @@ var config_data = `
 		"fh": "Far from Hub<br>",
 		"tn": "Nowhere<br>",
         "te": "Everywhere"
+		},
     },
-	   { "name": "Can Shoot while moving",
+	{ "name": "Can Shoot while moving",
       "code": "swm",
       "type": "swmv",
       "choices": {
         "sy": "Yes<br>",
         "sn": "No"
+		},
     },
-		   { "name": "How do they get to the netral zone",
+	{ "name": "How do they get to the netral zone",
       "code": "nz",
       "type": "hgttnz",
       "choices": {
@@ -146,16 +153,17 @@ var config_data = `
         "tt": "Tranch<br>",
 		"tb": "Both<br>",
 		"tn": "None"
+		},
     },
-	       { "name": "Aprox Fuel Launched",
+	{ "name": "Aprox Fuel Launched",
       "code": "tfl",
       "type": "counter"
     },
-	       { "name": "Aprox Fuel Fed",
+	{ "name": "Aprox Fuel Fed",
       "code": "tff",
       "type": "counter"
     },
-	      { "name": "Teleop Launch Completion Percentage",
+	{ "name": "Teleop Launch Completion Percentage",
       "code": "ac",
       "type": "Aperc",
       "choices": {
@@ -170,7 +178,8 @@ var config_data = `
         "eg": "~80% Completion<br>",
         "ni": "More then 90% Completion<br>",
         "hu": "100% Completion"
-      }
+      },
+	}
   ],
   "endgame":[
    { "name": "Final Status",
@@ -185,7 +194,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-     { "name": "Time to Climb",
+    { "name": "Time to Climb",
       "code": "tc",
       "type":"radio",
       "choices": {
