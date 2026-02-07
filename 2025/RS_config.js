@@ -58,128 +58,156 @@ var config_data = `
     { "name": "Is their robot<br>on the field?",
       "code": "as",
       "type": "bool"
-	}
+    }
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-	  "code": "al",
-	  "type": "bool"
-	},
-    { "name": "Coral Scored in L1",
-      "code": "aon",
-      "type": "counter"
+      "code": "al",
+      "type": "bool"
     },
-    { "name": "Coral Scored in L2",
-      "code": "atw",
-      "type": "counter"
-    },
-	{ "name": "Coral Scored in L3",
-	  "code": "ath",
-	  "type": "counter"
-	},
-	 { "name": "Coral Scored in L4",
-	  "code": "afo",
-	  "type": "counter"
-	},
-  { "name": "Coral Missed",
-	  "code": "acm",
-	  "type": "counter"
-	},
-   { "name": "Algae Scored in Processor",
-	  "code": "aap",
-	  "type": "counter"
-	},
- { "name": "Algae Scored in Net",
-	  "code": "aan",
-	  "type": "counter"
-	}, 
- { "name": "Algae Missed ",
-	  "code": "aam",
-	  "type": "counter"
-	}
-  ],
-  "teleop": [
-    { "name": "Coral Scored in L1",
-      "code": "ton",
-      "type": "counter"
-    },
-    { "name": "Coral Scored in L2",
-      "code": "ttw",
-      "type": "counter"
-    },
-	{ "name": "Coral Scored in L3",
-	  "code": "tth",
-	  "type": "counter"
-	},
-	 { "name": "Coral Scored in L4",
-	  "code": "tfo",
-	  "type": "counter"
-	},
-  { "name": "Coral Missed",
-	  "code": "tcm",
-	  "type": "counter"
-	},
-   { "name": "Algae Scored in Processor",
-	  "code": "tap",
-	  "type": "counter"
-	},
- { "name": "Algae Scored in Net",
-	  "code": "tan",
-	  "type": "counter"
-	}, 
- { "name": "Algae Missed ",
-	  "code": "tam",
-	  "type": "counter"
-	},
-	{ "name": "Were they defended<br>",
-	  "code": "wdt",
-	  "type": "text"
-	},
-    { "name": "Coral Pickup:",
-      "code": "tpu",
+    { "name": "Auton Pickup Location",
+      "code": "apl",
       "type": "radio",
       "choices": {
-        "s": "HP Station <br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "h": "HP Hopper fed<br>",
+        "g": "Ground Intake<br>",
+        "n": "Neutral zone<br>",
+        "x": "No Intake"
       },
       "defaultValue": "x"
     },
-      { "name": "Algae Pickup:",
-      "code": "apu",
+    { "name": "Auton Climb",
+      "code": "ac",
       "type": "radio",
       "choices": {
-        "s": "Reef (Includes Removing It) <br>",
-        "f": "Floor<br>",
+        "f": "Failed Climb<br>",
+        "s": "Successful L1 climb<br>",
+        "x": "Didnt attempt"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Auton End Position",
+      "code": "aep",
+      "type": "radio",
+      "choices": {
+        "n": "In neutral zone<br>",
+        "c": "Climb attempt<br>",
+        "a": "In Alliance Zone"
+      },
+      "defaultValue": "a"
+    },
+    { "name": "How much fuel did they<br>approx make in the hub",
+      "code": "afh",
+      "type": "counter"
+    },
+    { "name": "How many Cycles<br>did they do",
+      "code": "acy",
+      "type": "counter"
+    }
+  ],
+  "teleop": [
+    { "name": "Launching Location",
+      "code": "tll",
+      "type": "radio",
+      "choices": {
+        "t": "Touching Hub<br>",
+        "c": "Close to Hub<br>",
+        "f": "Far from Hub<br>",
+        "e": "Everywhere"
+      },
+      "defaultValue": "e"
+    },
+    { "name": "Pickup Location",
+      "code": "tpl",
+      "type": "radio",
+      "choices": {
+        "h": "HP Hopper fed<br>",
+        "g": "Ground Intake<br>",
+        "x": "No Intake"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Can launch while moving",
+      "code": "tlm",
+      "type": "radio",
+      "choices": {
+        "y": "Yes<br>",
+        "n": "No"
+      },
+      "defaultValue": "n"
+    },
+    { "name": "How do they go to<br>neutral zone",
+      "code": "tnz",
+      "type": "radio",
+      "choices": {
+        "r": "Ramp<br>",
+        "t": "Trench<br>",
         "b": "Both<br>",
-        "x": "Not Attempted"
+        "x": "None"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "How much fuel did they<br>approx launch",
+      "code": "tfl",
+      "type": "counter"
+    },
+    { "name": "How accurate is<br>their robot",
+      "code": "tar",
+      "type": "radio",
+      "choices": {
+        "10": "10%<br>",
+        "20": "20%<br>",
+        "30": "30%<br>",
+        "40": "40%<br>",
+        "50": "50%<br>",
+        "60": "60%<br>",
+        "70": "70%<br>",
+        "80": "80%<br>",
+        "90": "90%"
+      },
+      "defaultValue": "50"
+    },
+    { "name": "Balls Fed",
+      "code": "tbf",
+      "type": "counter"
+    },
+    { "name": "Amount of cycles",
+      "code": "tcy",
+      "type": "counter"
+    },
+    { "name": "How do they feed balls",
+      "code": "tfb",
+      "type": "radio",
+      "choices": {
+        "l": "Launching<br>",
+        "g": "Ground<br>",
+        "b": "Both<br>",
+        "x": "Didnt feed"
       },
       "defaultValue": "x"
     }
   ],
-  "endgame":[
-   { "name": "Final Status",
-      "code": "fs",
-      "type":"radio",
+  "endgame": [
+    { "name": "Climb",
+      "code": "ec",
+      "type": "radio",
       "choices": {
-        "p": "Parked<br>",
-	"j": "Shallow Climb<br>",
-	"g": "Deep Climb<br>",
-      	"o": "Failed Deep Climb<br>",
-	"h": "Failed Shallow Climb<br>",
-        "x": "Not attempted<br>"
+        "f": "Failed Climb<br>",
+        "l1": "L1<br>",
+        "l2": "L2<br>",
+        "l3": "L3<br>",
+        "x": "Didnt attempt"
       },
       "defaultValue": "x"
     },
-     { "name": "Time to Climb",
+    { "name": "Time to Climb",
       "code": "tc",
-      "type":"radio",
+      "type": "radio",
       "choices": {
-		    "o": "First Try ~10 Sec<br>",
-		    "h": "Solid Climb ~15 Sec<br>",
-      	    "l": "Struggled ~20 Sec<br>",
-        "x": "Didnt Climb<br>"
+        "ft": "First Try ~5 sec<br>",
+        "g": "Great Climb ~10 sec<br>",
+        "s": "Solid Climb >15 sec<br>",
+        "x": "Didnt Climb"
       },
       "defaultValue": "x"
     }
@@ -197,10 +225,10 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-	{ "name": "Who did they defend?",
-	  "code": "who",
-	  "type": "text"
-	},
+    { "name": "Who did they defend?",
+      "code": "who",
+      "type": "text"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
@@ -217,4 +245,3 @@ var config_data = `
     }
   ]
 }`;
-
