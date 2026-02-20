@@ -5,19 +5,19 @@ var config_data = `
   "pitConfig": "true",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Name",
+  { "name": "Scouter Name",
       "code": "s",
       "type": "text",
       "size": 10,
       "maxsize": 15
     },
-    { "name": "Team Number",
+  { "name": "Team Number",
       "code": "t",
       "type": "text",
       "size": 10,
       "maxSize": 15
     },
-    { "name": "Can they fit under the trench?",
+  { "name": "Can they fit under the trench?",
       "code": "trn",
       "type": "radio",
       "choices": {
@@ -26,7 +26,7 @@ var config_data = `
       },
       "defaultValue": "n"
     },
-    { "name": "Can they go over the bump?",
+  { "name": "Can they go over the bump?",
       "code": "bmp",
       "type": "radio",
       "choices": {
@@ -81,13 +81,5 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     }
-  ],
-  "auton": [
-  ],
-  "teleop": [
-  ],
-  "endgame": [
-  ],
-  "postmatch": [
   ]
 }`;
