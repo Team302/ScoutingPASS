@@ -242,3 +242,23 @@ input {
     font-family:'Lucida Console', 'monospace';
     text-align: justify;
 }
+#prematch_table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#prematch_table td {
+    text-align: center;
+}
+
+#prematch_table input[type="radio"],
+#prematch_table input[type="checkbox"] {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#prematch_table input[type="text"],
+#prematch_table input[type="number"] {
+    display: block;
+    margin: 0 auto;
+}
