@@ -78,6 +78,17 @@ var config_data = `
 	  },
 	  "defaultValue": "x"
     },
+	    { "name": "Auton Scoring",
+      "code": "asg",
+      "type": "clickable_image",
+      "filename": "2023/grid_image.png",
+      "dimensions": "9 4",
+      "clickRestriction": "onePerBox",
+      "toggleClick": "true",
+      "showFlip": "false",
+      "showUndo": "false",
+      "shape": "circle 12 black red true"
+    },
         { "name": "Main strategy",
       "code": "str",
       "type": "radio",
