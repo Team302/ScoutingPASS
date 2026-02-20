@@ -61,7 +61,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Able to Climb L3",
-      "code": "cl3",
+      "code": "clt",
       "type": "bool"
     },
     { "name": "Where they shoot from",
