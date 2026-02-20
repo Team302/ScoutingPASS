@@ -6,7 +6,7 @@ var config_data = `
   "pitConfig": "true",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Name",
+    { "name": "Scouter Name1",
 	  "code": "s", 
 	  "type": "text",
 	  "size": 10,
