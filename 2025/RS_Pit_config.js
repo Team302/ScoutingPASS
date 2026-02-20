@@ -1,7 +1,7 @@
 var config_data = `
 {
   "title": "Team 302 2026 Pit Scouting",
-  "page_title": "Rebuilt",
+  "page_title": "Rebuilt Pit Scouting",
   "pitConfig": "true",
   "checkboxAs": "10",
   "prematch": [
