@@ -1,9 +1,8 @@
 var config_data = `
 {
-  "title": "Team 302 2026 Pit Scouting",
-  "page_title": "Rebuilt Pit Scouting",
+  "title": "Scouting PASS 2026",
+  "page_title": "Rebuilt",
   "pitConfig": "true",
-  "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Name",
       "code": "sn",
@@ -68,11 +67,29 @@ var config_data = `
       "code": "cl3",
       "type": "checkbox"
     },
-    { "name": "Shooting Locations",
-      "code": "shl",
-      "type": "clickable_image",
-      "filename": "2025/field_image.png",
-      "shape": "circle 5 black red true"
+    { "name": "Shoots on the Move",
+      "code": "shm",
+      "type": "checkbox"
+    },
+    { "name": "Shoots Touching Hub",
+      "code": "shh",
+      "type": "checkbox"
+    },
+    { "name": "Shoots Close",
+      "code": "shc",
+      "type": "checkbox"
+    },
+    { "name": "Shoots Far",
+      "code": "shf",
+      "type": "checkbox"
+    },
+    { "name": "Shoots from Anywhere",
+      "code": "sha",
+      "type": "checkbox"
+    },
+    { "name": "Cannot Shoot (Nowhere)",
+      "code": "shn",
+      "type": "checkbox"
     },
     { "name": "Comments",
       "code": "co",
