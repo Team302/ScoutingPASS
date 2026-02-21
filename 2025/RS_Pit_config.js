@@ -58,17 +58,17 @@
       "code": "cl1",
       "type": "checkbox"
     },
-  { "name": "Whats the highest level they can climb",
+    { "name": "Whats the highest level they can climb",
       "code": "hcl",
       "type": "radio",
       "choices": {
         "o": "L1 Climb<br>",
         "w": "L2 Climb<br>",
         "r": "L3 Climb"
-        },
-          "defaultValue": "n"
       },
-        { "name": "Can they shoot while moving",
+      "defaultValue": "n"
+    },
+    { "name": "Can they shoot while moving",
       "code": "swm",
       "type": "checkbox"
     },
@@ -82,9 +82,9 @@
         "m": "Upto Mid Distance<br>",
         "f": "Upto Far Distance<br>",
         "n": "Cant shoot"
-        },
-          "defaultValue": "n"
       },
+      "defaultValue": "n"
+    },
     { "name": "Comments",
       "code": "co",
       "type": "text",
@@ -100,4 +100,4 @@
   ],
   "postmatch": [
   ]
-};
+}
