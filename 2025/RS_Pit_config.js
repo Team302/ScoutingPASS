@@ -1,4 +1,3 @@
-var config_data = `
 {
   "title": "Scouting PASS 2026",
   "page_title": "Rebuilt",
@@ -60,7 +59,7 @@ var config_data = `
       "type": "checkbox"
     },
   { "name": "Whats the highest level they can climb",
-      "code": "wts",
+      "code": "hcl",
       "type": "radio",
       "choices": {
         "o": "L1 Climb<br>",
@@ -101,4 +100,4 @@ var config_data = `
   ],
   "postmatch": [
   ]
-}`;
+};
