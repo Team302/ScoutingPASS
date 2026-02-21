@@ -64,7 +64,7 @@
       "choices": {
         "o": "L1 Climb<br>",
         "w": "L2 Climb<br>",
-        "r": "L3 Climb",
+        "r": "L3 Climb"
         },
           "defaultValue": "n"
       },
