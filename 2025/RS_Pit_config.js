@@ -1,3 +1,4 @@
+var config_data = `
 {
   "title": "Scouting PASS 2026",
   "page_title": "Rebuilt",
@@ -100,4 +101,4 @@
   ],
   "postmatch": [
   ]
-}
+}`;
