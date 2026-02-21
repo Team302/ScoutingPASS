@@ -67,30 +67,21 @@ var config_data = `
       "code": "cl3",
       "type": "checkbox"
     },
-    { "name": "Shoots on the Move",
-      "code": "shm",
+        { "name": "Can they shoot while moving",
+      "code": "swm",
       "type": "checkbox"
     },
-    { "name": "Shoots Touching Hub",
-      "code": "shh",
-      "type": "checkbox"
-    },
-    { "name": "Shoots Close",
-      "code": "shc",
-      "type": "checkbox"
-    },
-    { "name": "Shoots Far",
-      "code": "shf",
-      "type": "checkbox"
-    },
-    { "name": "Shoots from Anywhere",
-      "code": "sha",
-      "type": "checkbox"
-    },
-    { "name": "Cannot Shoot (Nowhere)",
-      "code": "shn",
-      "type": "checkbox"
-    },
+    { "name": "Where do they shoot",
+      "code": "wts",
+      "type": "radio",
+      "choices": {
+        "a": "Anywhere<br>",
+        "h": "Touching Hub<br>",
+        "y": "Close Distance Only<br>",
+        "m": "Upto Mid Distance<br>",
+        "f": "Upto Far Distance<br>",
+        "n": "Cant shoot"
+      },
     { "name": "Comments",
       "code": "co",
       "type": "text",
