@@ -81,7 +81,8 @@ var config_data = `
         "m": "Upto Mid Distance<br>",
         "f": "Upto Far Distance<br>",
         "n": "Cant shoot"
-        }
+        },
+          "defaultValue": "n"
       },
     { "name": "Comments",
       "code": "co",
