@@ -55,18 +55,20 @@ var config_data = `
       "size": 10,
       "maxSize": 10
     },
-    { "name": "Able to Climb L1",
+    { "name": "Able to Climb In Auton",
       "code": "cl1",
       "type": "checkbox"
     },
-    { "name": "Able to Climb L2",
-      "code": "cl2",
-      "type": "checkbox"
-    },
-    { "name": "Able to Climb L3",
-      "code": "cl3",
-      "type": "checkbox"
-    },
+  { "name": "Whats the highest level they can climb",
+      "code": "wts",
+      "type": "radio",
+      "choices": {
+        "o": "L1 Climb<br>",
+        "w": "L2 Climb<br>",
+        "r": "L3 Climb<br>",
+        },
+          "defaultValue": "n"
+      },
         { "name": "Can they shoot while moving",
       "code": "swm",
       "type": "checkbox"
