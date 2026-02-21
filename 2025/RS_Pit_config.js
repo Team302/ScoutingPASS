@@ -5,19 +5,17 @@ var config_data = `
   "pitConfig": "true",
   "checkboxAs": "10",
   "prematch": [
-  { "name": "Scouter Name",
-      "code": "s",
+    { "name": "Scouter Name",
+      "code": "sn",
       "type": "text",
-      "size": 10,
-      "maxsize": 15
+      "size": 20,
+      "maxSize": 50
     },
-  { "name": "Team Number",
+    { "name": "Team Number",
       "code": "t",
-      "type": "text",
-      "size": 10,
-      "maxSize": 15
+      "type": "number"
     },
-  { "name": "Can they fit under the trench?",
+    { "name": "Can they fit under the trench?",
       "code": "trn",
       "type": "radio",
       "choices": {
@@ -26,7 +24,7 @@ var config_data = `
       },
       "defaultValue": "n"
     },
-  { "name": "Can they go over the bump?",
+    { "name": "Can they go over the bump?",
       "code": "bmp",
       "type": "radio",
       "choices": {
@@ -46,34 +44,35 @@ var config_data = `
       },
       "defaultValue": "o"
     },
+    { "name": "Other Drivetrain",
+      "code": "odt",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "Estimated Hopper Capacity (# of balls)",
       "code": "hop",
       "type": "text",
-      "size": 5,
+      "size": 10,
       "maxSize": 10
     },
     { "name": "Able to Climb L1",
       "code": "cl1",
-      "type": "bool"
+      "type": "checkbox"
     },
     { "name": "Able to Climb L2",
       "code": "cl2",
-      "type": "bool"
+      "type": "checkbox"
     },
     { "name": "Able to Climb L3",
       "code": "cl3",
-      "type": "bool"
+      "type": "checkbox"
     },
-    { "name": "Where they shoot from",
-      "code": "sht",
+    { "name": "Shooting Locations",
+      "code": "shl",
       "type": "clickable_image",
-      "filename": "2020/field_image.png",
-      "dimensions": "9 4",
-      "clickRestriction": "onePerBox",
-      "toggleClick": "true",
-      "showFlip": "false",
-      "showUndo": "false",
-      "shape": "circle 12 black red true"
+      "filename": "2025/field_image.png",
+      "shape": "circle 5 black red true"
     },
     { "name": "Comments",
       "code": "co",
@@ -81,5 +80,13 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     }
+  ],
+  "auton": [
+  ],
+  "teleop": [
+  ],
+  "endgame": [
+  ],
+  "postmatch": [
   ]
 }`;
